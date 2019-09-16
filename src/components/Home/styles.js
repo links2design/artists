@@ -1,6 +1,6 @@
 const styles = {
   root: {
-    padding: "8px 4px 8px 10px",
+    padding: "8px 5px 8px 10px",
     display: "flex",
     alignItems: "center",
     width: "100%"

@@ -49,8 +49,8 @@ export class Home extends Component {
     const { searchKey } = this.state; //destracting the states
     return (
       <Container>
-        <Grid container>
-          <Grid item sm={6}>
+        <Grid container justify="center">
+          <Grid item lg={6} sm={8} xs={12}>
             <form onSubmit={this.submitHandler}>
               <Paper className={this.props.classes.root}>
                 <InputBase
