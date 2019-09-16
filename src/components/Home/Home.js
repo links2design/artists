@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Paper from "@material-ui/core/Paper";
+import { withStyles } from "@material-ui/styles";
+import styles from "./styles";
 import Typography from "@material-ui/core/Typography";
 import InputBase from "@material-ui/core/InputBase";
 import Divider from "@material-ui/core/Divider";
@@ -12,6 +14,7 @@ export class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      classes: "",
       searchKey: "",
       items: []
     };
@@ -48,8 +51,8 @@ export class Home extends Component {
       <Container>
         <Grid container>
           <Grid item sm={6}>
-            <Paper>
-              <form onSubmit={this.submitHandler}>
+            <form onSubmit={this.submitHandler}>
+              <Paper className={this.props.classes.root}>
                 <InputBase
                   type="text"
                   name="searchKey"
@@ -57,13 +60,22 @@ export class Home extends Component {
                   placeholder="Search Artists"
                   inputProps={{ "aria-label": "search artist here" }}
                   onChange={this.changeHandler}
+                  className={this.props.classes.input}
+                  autoComplete="off"
                 />
-                <Divider orientation="vertical" />
-                <IconButton type="submit" aria-label="search">
+                <Divider
+                  orientation="vertical"
+                  className={this.props.classes.divider}
+                />
+                <IconButton
+                  type="submit"
+                  aria-label="search"
+                  className={this.props.classes.iconButton}
+                >
                   <SearchIcon />
                 </IconButton>
-              </form>
-            </Paper>
+              </Paper>
+            </form>
           </Grid>
         </Grid>
         <Typography variant="h3">
@@ -78,5 +90,4 @@ export class Home extends Component {
     );
   }
 }
-
-export default Home;
+export default withStyles(styles)(Home);
