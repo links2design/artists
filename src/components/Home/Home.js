@@ -9,6 +9,7 @@ import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
+import Box from "@material-ui/core/Box";
 
 export class Home extends Component {
   constructor(props) {
@@ -81,11 +82,19 @@ export class Home extends Component {
         <Typography variant="h3">
           Results found for {this.state.searchKey}
         </Typography>
-        <ul>
+        <Grid container spacing={3}> 
           {this.state.items.map(item => (
-            <li key={item.id}>{item.image_url}</li>
+            <Grid item sm={6} key={item.id}>
+              <Box className={this.props.classes.resultWrap}>
+                <div className={this.props.classes.imgWrapper}>
+                  <img src={item.image_url} />
+                </div>
+                <Typography variant="h3">{item.name}</Typography>
+                <a href={item.facebook_page_url} target="_blank">{item.facebook_page_url}</a>
+              </Box>
+            </Grid>
           ))}
-        </ul>
+        </Grid>
       </Container>
     );
   }
