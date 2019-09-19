@@ -29,3 +29,16 @@ Here are some points that would be helpful to understand the development flow fr
 npx create-react-app artists
 
 ```
+
+```
+#install following npm dependencies:
+
+#Material UI 
+npm install @material-ui/core
+npm install @material-ui/icons
+npm install @material-ui/styles
+
+#React router
+npm install --save react-router
+
+```
