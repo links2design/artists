@@ -1,4 +1,4 @@
-# artists
+# Artists search application - React JS
 
 This is the robust, fully featured React App Artist search demo. The demo allows the visitor to search through node-modules. This README is a continuation of the article - pull down the master branch to complete code.
 
