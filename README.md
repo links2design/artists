@@ -51,8 +51,8 @@ npm install --save react-router
 
 - `App` : Including the Router to navigate between different components.
 ```javascript
- # components/App.js
- import React from "react";
+ // components/App.js
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Header from "../Header/Header";
