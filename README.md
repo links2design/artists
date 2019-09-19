@@ -9,4 +9,13 @@ This README is divided into following sections:
 
 ## Setup
 
-To get started, simply clone this repository and run `npm` to install dependencies. We will go over some basic configuration steps, but if you are coming from the tutorial you can skip to [State Management](#state).
+To get started, simply clone this repository and run `npm` to install dependencies. We will go over some basic configuration steps.
+
+```
+# Clone the repository
+git clone https://github.com/links2design/artists.git
+cd artists
+
+# Install dependencies
+npm install
+```
