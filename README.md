@@ -50,3 +50,28 @@ npm install --save react-router
 ### Created the following components
 
 - `App` : Including the Router to navigate between different components.
+```javascript
+ # components/App.js
+ import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Header from "../Header/Header";
+import Home from "../Home/Home";
+import About from "../About/About";
+import Footer from "../Footer/Footer";
+const App = () => (
+  <Router>
+    <CssBaseline />
+    <Header />
+    <main>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+      </Switch>
+    </main>
+    <Footer />
+  </Router>
+);
+export default App;
+
+```
