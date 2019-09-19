@@ -78,36 +78,7 @@ export default App;
 - `Search`: This is a dynamic reuseable componenet which is indluded in home screen to make search for artists
 ```javascript
 //Search Component
-const useStyles = makeStyles(theme => ({
-  root: {
-    padding: "8px 5px 8px 10px",
-    display: "flex",
-    alignItems: "center",
-    width: "100%"
-  },
-  input: {
-    marginLeft: theme.spacing(1),
-    flex: 1
-  },
-  iconButton: {
-    padding: 10
-  },
-  divider: {
-    height: 28,
-    margin: 4
-  }
-}));
-
-const Search = ({
-  formsubmit,
-  name,
-  placeholder,
-  inputprops,
-  onChange,
-  buttnlabel,
-  searchKey,
-  ...props
-}) => {
+const Search = ({formsubmit, name, placeholder, inputprops, onChange, buttnlabel, searchKey, ...props}) => {
   return (
     <form onSubmit={formsubmit}>
       <Paper className={classes.root}>
