@@ -1,14 +1,15 @@
 import React from "react";
+import useStyles from "./styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import useStyles from "./styles";
+import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import Link from "../common/Link";
+import Nav from "../Nav/Nav";
 
-export default function Header() {
+export default function ButtonAppBar() {
   const classes = useStyles();
+
   return (
     <div className={classes.root}>
       <AppBar position="fixed">
@@ -17,16 +18,14 @@ export default function Header() {
             edge="start"
             className={classes.menuButton}
             color="inherit"
-            aria-label="open drawer"
+            aria-label="menu"
           >
             <MenuIcon />
           </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
+          <Typography variant="h6" className={classes.title}>
             Artists
           </Typography>
-          <Link to="/about" unstyled>
-            About
-          </Link>
+          <Nav />
         </Toolbar>
       </AppBar>
     </div>

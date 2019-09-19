@@ -72,8 +72,6 @@ export class Home extends Component {
   }
 
   render() {
-    const { searchKey } = this.state; //destracting the states
-
     return (
       <Container>
         <Grid container justify="center">

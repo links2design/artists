@@ -19,7 +19,7 @@ const Artist = ({ imgUrl, name, fbUrl, data, getData, ...props }) => {
       <Typography variant="h3" onClick={getData} className={classes.title}>
         {name}
       </Typography>
-      <a href={fbUrl} target="_blank">
+      <a href={fbUrl} target="_blank" rel="noopener noreferrer">
         {fbUrl}
       </a>
     </Box>
