@@ -5,11 +5,11 @@ This is the robust, fully featured React App Artist search demo. The demo allows
 This README is divided into following sections:
 
 - [Setup](#setup) - Follow these instructions to run the example search application.
-- [Topics](#topics) - Considerations when building a React-based search application.
+- [Development](#development) - Considerations when building a React-based search application.
 
 ## Setup
 
-To get started, simply clone this repository and run `npm` to install dependencies. We will go over some basic configuration steps.
+To get started, simply clone this repository and run `npm` to install dependencies. You may need to go over some basic configuration steps.
 
 ```
 # Clone the repository
@@ -18,4 +18,35 @@ cd artists
 
 # Install dependencies
 npm install
+
+# start application
+npm start
 ```
+
+## Development
+
+Here are some points that would be helpful to understand the development flow from scratch with examples:
+
+- Create react application with name 'artists' using the following command
+
+```
+# Creating react app:
+npx create-react-app artists
+
+```
+
+```
+# install following npm dependencies:
+
+# Material UI
+npm install @material-ui/core
+npm install @material-ui/icons
+npm install @material-ui/styles
+
+# React router
+npm install --save react-router
+```
+
+### Created the following components
+
+- `App` : Including the Router to navigate between different components.
