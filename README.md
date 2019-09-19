@@ -1,11 +1,11 @@
-# Artists search application - React JS
+# artists
 
 This is the robust, fully featured React App Artist search demo. The demo allows the visitor to search through node-modules. This README is a continuation of the article - pull down the master branch to complete code.
 
 This README is divided into following sections:
 
 - [Setup](#setup) - Follow these instructions to run the example search application.
-- [Topics](#topics) - Considerations when building a React-based search application.
+- [Development Overview](#overview) - Considerations when building a React-based search application.
 
 ## Setup
 
@@ -20,10 +20,12 @@ cd artists
 npm install
 ```
 
-### Run the search app
+## Development Overview
+Here are some points that would be helpful to understand the development flow from scratch with examples:
+- Create react application with name 'artists' using the following command
 
-At this point, your engine/localhost is ready and all that is left to do is run the application:
+```
+#Creating react app:
+npx create-react-app artists
 
-```bash
-npm start
 ```
