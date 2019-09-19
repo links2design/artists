@@ -19,3 +19,11 @@ cd artists
 # Install dependencies
 npm install
 ```
+
+### Run the search app
+
+At this point, your engine/localhost is ready and all that is left to do is run the application:
+
+```bash
+npm start
+```
