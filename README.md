@@ -18,6 +18,9 @@ cd artists
 
 # Install dependencies
 npm install
+
+# start application
+npm start
 ```
 
 ## Development Overview
@@ -25,20 +28,20 @@ Here are some points that would be helpful to understand the development flow fr
 - Create react application with name 'artists' using the following command
 
 ```
-#Creating react app:
+# Creating react app:
 npx create-react-app artists
 
 ```
 
 ```
-#install following npm dependencies:
+# install following npm dependencies:
 
-#Material UI 
+# Material UI 
 npm install @material-ui/core
 npm install @material-ui/icons
 npm install @material-ui/styles
 
-#React router
+# React router
 npm install --save react-router
 
 ```
