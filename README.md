@@ -9,7 +9,7 @@ This README is divided into following sections:
 
 ## Setup
 
-To get started, simply clone this repository and run `npm` to install dependencies. We will go over some basic configuration steps.
+To get started, simply clone this repository and run `npm` to install dependencies. You may need to go over some basic configuration steps.
 
 ```
 # Clone the repository
