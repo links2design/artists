@@ -23,7 +23,7 @@ npm install
 npm start
 ```
 
-## Development Flow
+## Development
 Here are some points that would be helpful to understand the development flow from scratch with examples:
 - Create react application with name 'artists' using the following command
 
