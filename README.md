@@ -44,5 +44,6 @@ npm install @material-ui/styles
 # React router
 npm install --save react-router
 ```
-
+### Created the following components
+- `App` : Including the Router to navigate between different components.
 
