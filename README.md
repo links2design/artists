@@ -5,7 +5,7 @@ This is the robust, fully featured React App Artist search demo. The demo allows
 This README is divided into following sections:
 
 - [Setup](#setup) - Follow these instructions to run the example search application.
-- [Development Overview](#overview) - Considerations when building a React-based search application.
+- [Development Flow](#developmentflow) - Considerations when building a React-based search application.
 
 ## Setup
 
@@ -43,5 +43,6 @@ npm install @material-ui/styles
 
 # React router
 npm install --save react-router
-
 ```
+
+
