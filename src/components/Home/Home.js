@@ -24,6 +24,9 @@ export class Home extends Component {
   }
   changeHandler = e => {
     this.setState({ [e.target.name]: e.target.value });
+    this.setState(prevState => ({
+      events: []
+    }));
   };
   submitHandler(e) {
     e.preventDefault();
@@ -88,11 +91,11 @@ export class Home extends Component {
         </Grid>
         <Typography>
           {this.state.items.length ? (
-            <span>Results found for " {this.state.searchKey} "</span>
-          ) : this.state.searchKey.length ? (
-            <span>no resulots found</span>
+            <span className={this.props.classes.resltString}>
+              Results found for " {this.state.searchKey} "
+            </span>
           ) : (
-            <span>Enter query to continue</span>
+            <span>Find your favourit guy...</span>
           )}
         </Typography>
 
@@ -101,7 +104,9 @@ export class Home extends Component {
             ? this.state.items.map(item => (
                 <Grid
                   item
+                  lg={4}
                   sm={6}
+                  xs={12}
                   key={item.id}
                   className={this.props.classes.resultWrap}
                 >
@@ -120,7 +125,7 @@ export class Home extends Component {
 
         <Grid container spacing={3}>
           {this.state.events.map(event => (
-            <Grid item sm={6} key={event.id}>
+            <Grid item sm={6} xs={12} key={event.id}>
               <Event
                 country={event.venue.country}
                 city={event.venue.city}

@@ -54,6 +54,10 @@ const styles = {
         textOverflow: "ellipsis"
       }
     }
+  },
+  resltString: {
+    display: "block",
+    marginTop: 50
   }
 };
 export default styles;

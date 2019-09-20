@@ -16,14 +16,9 @@ const Footer = () => {
         <Grid item xs={6}>
           <div className={classes.footerInfo}>
             <Typography className={classes.generalText}>
-              <Link to="/privacy-policy" unstyled>
-                Terms + Privacy Policy
-              </Link>
-            </Typography>
-            <Typography className={classes.generalText}>
               {new Date().getFullYear()} &copy;{" "}
-              <Link to="/register" unstyled>
-                demoartist.com
+              <Link to="/" unstyled>
+                artist-demo.com
               </Link>
             </Typography>
           </div>
