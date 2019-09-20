@@ -25,3 +25,8 @@ npm start
 
 1. Search artists
 2. Events against searched artist
+
+## General Information
+I have used some 3rd party libraries/npm packages to make my code more efficient like 
+1. `Formik` to mantain forms properties
+2. `Yup` to create validation for form elements
